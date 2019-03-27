@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1E9DD8</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="appBgColor">#FAFAFA</color>
+    <color name="appBgColorOpacity40">#66fafafa</color>
+    <color name="blackTextColorOpacity40">#66000000</color>
+    <color name="dark_green_color">#FF475414</color>
+
+    <color name="dialogDimColor">#61000000</color>
+    <color name="blackTextColorO">#DE000000</color>
+    <color name="dialogTextColor">#8A000000</color>
+</resources>

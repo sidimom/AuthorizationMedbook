@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Authorization Medbook</string>
+    <string name="enter_mail">Введите логин</string>
+    <string name="code">Введите пароль</string>
+    <string name="sign_in">Войти</string>
+    <string name="help">Помощь</string>
+    <string name="medbook_is">Медбук - система работы с врачами</string>
+    <string name="registration">Регистрация</string>
+    <string name="cancel">Отмена</string>
+    <string name="accept">Ok</string>
+</resources>

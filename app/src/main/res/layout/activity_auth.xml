@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/margin_16"
+    android:paddingEnd="@dimen/margin_16"
+    android:paddingStart="@dimen/margin_16"
+    android:paddingTop="@dimen/margin_64"
+    tools:context=".AuthActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/margin_64"
+        android:src="@drawable/img_loginlogo" />
+
+    <EditText
+        android:id="@+id/mail_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_16"
+        android:background="@drawable/auth_drawable_edit_text"
+        android:hint="@string/enter_mail"
+        android:inputType="textEmailAddress"
+        android:nextFocusDown="@+id/promocode_input"
+        android:padding="@dimen/margin_8"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/appBgColor" />
+
+    <EditText
+        android:id="@+id/promocode_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/auth_drawable_edit_text"
+        android:hint="@string/code"
+        android:nextFocusDown="@+id/sign_in_button"
+        android:padding="@dimen/margin_8"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/appBgColor" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <Button
+            android:id="@+id/sign_in_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_24"
+            android:background="@drawable/auth_button"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:paddingBottom="@dimen/margin_10"
+            android:paddingEnd="66dp"
+            android:paddingStart="66dp"
+            android:paddingTop="@dimen/margin_10"
+            android:text="@string/sign_in"
+            android:textColor="@color/auth_button_text_color"
+            android:textSize="@dimen/text_size_16"
+            android:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_20"
+            android:indeterminateTint="@android:color/white"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/medbook_is"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/rectangle_rounded_8_stroke_black_opacity"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:paddingBottom="@dimen/margin_10"
+            android:paddingEnd="56dp"
+            android:paddingStart="56dp"
+            android:paddingTop="@dimen/margin_10"
+            android:text="@string/help"
+            android:textSize="@dimen/text_size_16"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/medbook_is"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/medbook_is"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size_14"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/registration_button"
+            android:src="@drawable/img_mdm_logo_auth"
+            android:layout_centerHorizontal="true"
+            />
+
+        <Button
+            android:id="@+id/registration_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_12"
+            android:layout_marginBottom="@dimen/margin_12"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:paddingBottom="@dimen/margin_14"
+            android:paddingEnd="60dp"
+            android:paddingStart="60dp"
+            android:paddingTop="@dimen/margin_14"
+            android:text="@string/registration"
+            android:textColor="@color/dark_green_color"
+            android:textSize="@dimen/text_size_14"
+            android:visibility="visible" />
+    </RelativeLayout>
+</LinearLayout>
